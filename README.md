@@ -1,6 +1,8 @@
 
 # 📊 User Data Analysis – SQL Case Study
 
+This project is a beginner-friendly SQL case study focused on analyzing user activity, order trends, and revenue patterns from a fictional e-commerce dataset. It demonstrates the use of SQL joins, aggregations, date functions, and ranking functions to solve business questions related to sales performance, customer segmentation, and platform engagement.
+
 ## 📌 Project Objective
 Analyze customer orders, purchasing behavior, and product trends using SQL. The goal is to generate data-driven insights that can help improve marketing, inventory planning, and customer segmentation.
 
@@ -27,6 +29,7 @@ ORDER BY Spend DESC
 ```
 
 📊 **Result:**
+
 
 
 💡 **Insight:**  
@@ -99,7 +102,7 @@ These users signed up but made no purchases — an opportunity for re-engagement
  FROM products_data AS P
  INNER JOIN orders_data AS O
  ON P.product_id = O.product_id
- WHERE customer_id =  (SELECT TOP 1 customer_id-- SUM(amount_paid) AS Spend
+ WHERE customer_id =  (SELECT TOP 1 customer_id --SUM(amount_paid) AS Spend --
                      FROM orders_data
                      GROUP BY customer_id
                      ORDER BY SUM(amount_paid) DESC)
@@ -125,5 +128,5 @@ As per Q13. Olivia River spend the most on the item category 'Electronics', prod
 ## 🙋‍♀️ About Me
 I’m Kashish, an aspiring Data Analyst with a background in Economics. I'm currently pursuing an Advanced Data Analytics certification (AnalytixLabs + IIT Guwahati). This project is part of my hands-on learning to build a strong portfolio in SQL, Excel, Power BI, and Python.
 
-📫 [LinkedIn Profile](www.linkedin.com/in/kashish-kwatra)  
+📫 [LinkedIn Profile](https://www.linkedin.com/in/kashish-kwatra)
 💼 Open to internships & entry-level data roles
