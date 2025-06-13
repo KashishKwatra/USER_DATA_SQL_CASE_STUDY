@@ -14,6 +14,11 @@ This case study uses three interlinked datasets:
 
 ---
 
+## 🧩 ER Diagram
+
+![ER Diagram](images/ER_Diagram.png)
+
+
 ## ❓ Highlighted Business Questions
 
 ### 🔹 Q2. Which customer has the highest total spend?
@@ -29,7 +34,7 @@ ORDER BY Spend DESC
 ```
 
 📊 **Result:**
-
+![Highest Spender Output](images/Highest_spender_Q2.png)
 
 
 💡 **Insight:**  
@@ -48,6 +53,7 @@ ORDER BY Revenue DESC
 ```
 
 📊 **Result:**
+![Highest Revenue Product](images/Highest_revenue_Q4.png)
 
 
 💡 **Insight:**  
@@ -71,6 +77,8 @@ ORDER BY Revenue, Order_count
 
 💡 **Insight:**  
 Revenue and order count peaked in the month of January and May.
+![Month-over-Month Orders](images/MOM_count_Q7.png)
+
 
 ---
 
@@ -85,7 +93,9 @@ ON U.cusomter_id = O.customer_id
 WHERE amount_paid IS NULL
 ```
 
-📊 **Result:**
+📊 **Result:**  
+![No Purchase Users](images/No_purchase_user_Q14.png)
+
 
 
 💡 **Insight:**  
@@ -111,6 +121,8 @@ These users signed up but made no purchases — an opportunity for re-engagement
 ```
 
 📊 **Result:**
+![Highest Product Category Spend](images/Highest_Product_category_Q15.png)
+
 
 
 💡 **Insight:**  
@@ -119,9 +131,10 @@ As per Q13. Olivia River spend the most on the item category 'Electronics', prod
 ---
 
 ## 📁 Project Files
-- `user_data_case_study_.sql` – All SQL queries
-- `README.md` – This project file
-- `/images` – (outputs, schema)
+- `user_data_case_study.sql` – Final cleaned SQL queries for all 15 business questions
+- `README.md` – Full project overview, queries, insights, and screenshots
+- `/images/` – Contains ER diagram and result screenshots for selected queries
+
 
 ---
 
