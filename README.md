@@ -34,6 +34,8 @@ ORDER BY Spend DESC
 ```
 
 📊 **Result:**
+
+📊 Screenshot:  
 ![Highest Spender Output](images/Highest_spender_Q2.png)
 
 
@@ -53,6 +55,8 @@ ORDER BY Revenue DESC
 ```
 
 📊 **Result:**
+
+📊 Screenshot:  
 ![Highest Revenue Product](images/Highest_revenue_Q4.png)
 
 
@@ -74,10 +78,13 @@ ORDER BY Revenue, Order_count
 
 📊 **Result:**
 
+📊 Screenshot:  
+![Month-wise Revenue Output](images/MOM_count_Q7.png)
+
 
 💡 **Insight:**  
 Revenue and order count peaked in the month of January and May.
-![Month-over-Month Orders](images/MOM_count_Q7.png)
+
 
 
 ---
@@ -94,8 +101,9 @@ WHERE amount_paid IS NULL
 ```
 
 📊 **Result:**  
-![No Purchase Users](images/No_purchase_user_Q14.png)
 
+📊 Screenshot:  
+![No Purchase Users](images/No_purchase_user_Q14.png)
 
 
 💡 **Insight:**  
@@ -121,8 +129,9 @@ These users signed up but made no purchases — an opportunity for re-engagement
 ```
 
 📊 **Result:**
-![Highest Product Category Spend](images/Highest_Product_category_Q15.png)
 
+📊 Screenshot:  
+![Highest Product Category Spend](images/Highest_Product_category_Q15.png)
 
 
 💡 **Insight:**  
